@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 # coding=utf8
-from pfrock.core.constants import ROUTER_PATH
-from pfrock.core.plugin import PfrockPlugin
+
 from pfrock_proxy_plugin.proxy import get_proxy_handler
 
 KEY_URL = 'url'
 KEY_HOST = 'host'
 
+ROUTER_PATH = "path"
 
-class PfrockProxyPlugin(PfrockPlugin):
+
+class PfrockProxyPlugin(object):
     def get_handler(self, options, **kwargs):
         # url path
         url_path = kwargs.get(ROUTER_PATH)
