@@ -35,7 +35,7 @@ def find_version(*file_paths):
 
 
 setup(
-    name='pfrock-static-plugin',
+    name='pfrock-proxy-plugin',
     version=find_version("pfrock_proxy_plugin/__init__.py"),
     description='proxy http mock plugin for pfrock',
     long_description=readme,
